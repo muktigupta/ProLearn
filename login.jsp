@@ -1,0 +1,126 @@
+	  <!DOCTYPE html>
+  <html>
+  <head><title>log in</title>
+  <style>
+  
+html { width: 100%; height:100%; overflow:show; }
+
+body { 
+    width: 100%;
+    height:100%;
+    font-family: 'Open Sans', sans-serif;
+    background: #092756;
+    background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg,  #670d10 0%, #092756 100%);
+    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+    background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -o-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -o-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+    background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -ms-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg,  #670d10 0%,#092756 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );
+}
+
+  .main {
+        background-color: #FFFFFF;
+        width: 500px;
+        height: 400px;
+        margin: 1em auto;
+        border-radius: 1.9em;
+        box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    }
+    
+      .un {
+    width: 66%;
+    color: rgb(38, 50, 56);
+    font-weight: 650;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #fff;
+    background: linear-gradient(to left, #9C27B0, #E040FB);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(4, 4, 4, 4.02);
+    margin-bottom: 50px;
+    margin-left: 46px;
+    text-align: center;
+    margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif;
+    }
+    
+    form.form1 {
+        padding-top: 40px;
+    }
+    
+    .submit {
+        width: 26%;
+        cursor: pointer;
+        border-radius: 5em;
+        color: #fff;
+        background: linear-gradient(to left, #9C27B0, #E040FB);
+        border: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-family: 'Ubuntu', sans-serif;
+        margin-right: 22px;
+        text-align: center;
+        font-size: 13px;
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+    }
+    
+      .sign {
+       margin-left: 35px;
+        padding-top: 40px;
+        color: #8C55AA;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        font-size: 23px;
+    }
+    
+    form.form1 {
+     padding-top: 40px;
+    }
+    
+    h2{color:white;}
+    
+ .click {
+  margin: 20px 0;
+  font-size: 11px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px #2a85a1;
+  }
+  
+   </style>
+  <script src="loginjavascript.js" language="javascript">
+      
+      </script>
+  </head>
+  <body>
+      <img src="Online-exam-system.jpg"  width="500" height="150" >
+  <center><h2>Online Examination System</h2></center>
+ <div  align="center">
+   
+  <div class="main">
+   <h2 class="sign">Log In</h2> 
+   <form onsubmit="return validate2();" action="login" method="post">      
+            <p>
+              <input type="text" onkeypress="return (event.charCode > 47 && event.charCode < 58)" id="mobilenumber" class="un "  placeholder="Mobile Number" name="mobilenumber"  > 
+            </p>
+            <p><br>
+              <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) ||(event.charCode > 47 && event.charCode < 58) " type="password" id="password" class="un"  placeholder="Password" name="password"> 
+            </p>
+            <p align="right"><br>
+              <input class="submit" type="submit" >
+              <br>               
+              </p>      
+	  </form>
+       
+    <center> <form action="welcomedemo.jsp">   
+    <h4> <p>Back to Home: <a> <input name="submit"  type="submit"  value="Clickhere  " > </a></p></h4>
+       </form>
+       </div></center>
+ </body>
+ </html>
