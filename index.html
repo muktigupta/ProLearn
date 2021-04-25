@@ -2,9 +2,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=1024">
 <meta charset="ISO-8859-1">
 <title> HOME </title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+	
+	var viewMode = getCookie("view-mode");
+if(viewMode == "desktop"){
+    viewport.setAttribute('content', 'width=1024');
+}else if (viewMode == "mobile"){
+    viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
+}
+</script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style type="text/css">
 
