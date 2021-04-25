@@ -8,18 +8,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style type="text/css">
 
-
-	
-	
-	<button id="GFG_Button"
-			onclick="detec()">
-	detect
-</button>
-
-	<p id="GFG_P"
-	style="color:green;
-			font-size: 20px;">
-	</p>
 	<script>
 		var a = '';
 		var up = document.getElementById("GFG_P");
@@ -33,6 +21,7 @@
 				|| navigator.userAgent.match(/iPod/i)
 				|| navigator.userAgent.match(/BlackBerry/i)
 				|| navigator.userAgent.match(/Windows Phone/i)) {
+					document.write("<h1>mobile browser</h1>");
 				a = true;
 			} else {
 				document.write("#f{
