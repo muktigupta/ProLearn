@@ -7,12 +7,9 @@
 <title> HOME </title>
 <script>
 	
-	var viewMode = getCookie("view-mode");
-if(viewMode == "desktop"){
-    viewport.setAttribute('content', 'width=1024');
-}else if (viewMode == "mobile"){
-    viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
-}
+var viewMode = getCookie("view-mode");
+if(viewMode == "desktop"){ viewport.setAttribute('content', 'width=1024');
+}else if (viewMode == "mobile"){viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');}
 </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style type="text/css">
@@ -53,7 +50,7 @@ if(viewMode == "desktop"){
     .privacy { cursor: pointer;  border-radius: 4em;  border: 1;  padding-left: 40px; padding-right: 59px;   padding-bottom: 5px;
        padding-top: 10px;    font-family: 'Ubuntu', sans-serif;  margin-right: 25px;   text-align: center;   font-size: 15px;   float:right; }  
   
-   .h{   font-size:32px; color:white; text-align:center;  float:right; } 
+  
   
 a.active {	
 	font-size:28px;			 
@@ -203,6 +200,17 @@ flex-direction:column;
 </head>
 <body>
 
+	
+	&nbsp;&nbsp;<div align="center">
+          <marquee bgcolor="yellow"
+         behavior="alternate"
+         direction="right"
+         loop="9"
+         scrollamount="1"
+         scrolldelay="40"
+         width="80%"> Welcome to Our ProLearn Education Website. </marquee>
+</div>
+
 
 <div id="header"> 
 
@@ -212,7 +220,7 @@ flex-direction:column;
 
 
  <div id="f">               
- <a class="active" href="Prolearn.jsp"> Home  </a>&nbsp;&nbsp;&nbsp;&nbsp;
+ <a class="active"> Home  </a>&nbsp;&nbsp;&nbsp;&nbsp;
  
   <div class="dropdown">
  <a  class="active"  onmouseover="mOver(this)" onmouseout="mOut(this)"> class 5-10</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -332,8 +340,7 @@ flex-direction:column;
   </table>  
   </div> </div> 
   
- <a  class="h">Sign in &nbsp;&nbsp;&nbsp;&nbsp; </a>&nbsp;&nbsp;
-  <a  class="h">Sign up  &nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;
+ 
  </div>
  
  <div class="icons">
@@ -352,6 +359,42 @@ flex-direction:column;
  </div>
  <p id="color">ProLearn is build for learning</p>
  </div>
-    
+<br><br>
+ <p>
+&nbsp; <strong>Download Our Android App</strong><br />
+ <a href="about.html">
+ <img src="IMG-20200719-WA0004.jpg"  height="100" width="130" />
+ </a>
+ <br /><br />
+ 
+ 
+</p>
+
+   
+
+
+
+
+   
+<table width="80%" align="center" cellpadding="10">
+  <tr>
+    <td bgcolor="white">
+       <h1 align="center">ProLearn</h1>
+       <hr width="80%" />
+   
+       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        Nulla nulla. Ut vel magna eu velit tristique tempus. Nunc
+        a wisi at ligula euismod tempus. Curabitur vestibulum
+        viverra tellus. Phasellus vestibulum. Duis justo...</p>
+   
+     … more content …
+   
+       </td>
+  </tr>
+</table>
+
+
+
+
 </body>
 </html>
