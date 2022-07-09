@@ -1,367 +1,70 @@
 
+
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=1024">
-<meta charset="ISO-8859-1">
-<title> HOME </title>
-<script>
-	
-var viewMode = getCookie("view-mode");
-if(viewMode == "desktop"){ viewport.setAttribute('content', 'width=1024');
-}else if (viewMode == "mobile"){viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');}
-</script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style type="text/css">
+<head><title>welcome</title>
+<style>  
+    body { 
+    width:100%;  
+    height:100%;
+    font-family:'Open Sans', sans-serif;
+    background: #092756;
+    background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg,  #670d10 0%, #092756 100%);
+    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+    background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -o-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -o-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+    background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -ms-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg,  #670d10 0%,#092756 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );
+  }
+    h1{color:white;}
+    h2{color:white;}
+   
+ a {  
+  width: 200px;
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #555;
+  margin-left: 550px;
+  }
 
-#f{
-  font-size:20px;
-  padding:5px;
-  margin:15px;
-  height:45px;
-  background-color:black;
-  border-radius:5px;
-  }
-  
-  #g{
-  font-size:35px;
-  padding:25px;
-  margin:160px;
-  height:200px;
-  background-color:#808080;
-  border-radius:10px;
-  }
-  
-   .submit{
-        cursor: pointer;
-        border-radius: 4em;    
-        border: 1;
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-bottom: 5px;
-        padding-top: 10px;
-        font-family: 'Ubuntu', sans-serif;
-        margin-right: 25px;
-        text-align: center;
-        font-size: 15px;
-         float:right;
-   }
-    
-    .privacy { cursor: pointer;  border-radius: 4em;  border: 1;  padding-left: 40px; padding-right: 59px;   padding-bottom: 5px;
-       padding-top: 10px;    font-family: 'Ubuntu', sans-serif;  margin-right: 25px;   text-align: center;   font-size: 15px;   float:right; }  
-  
-  
-  
-a.active {	
-	font-size:28px;			 
+ a.active {						
+  background-color: #092756;
   color: white;  
-  text-align:center;
     }
-    
-    #header{
-       background-color:#5c755e;
-       margin:15px;
-       height:85px;
-       border-radius:5px;
-       }
-       
-       .sideleft{
-       background-color:#e5e4d7;
-       margin:10px;
-       border-radius:5px;
-       padding:25px;
-       font-size:105%;
-       float:left;
-       width:365px; }
-       
-       h3{  
-       font-size:48px;
-       text-align:center;
-       color:#e5e4d7;
-       font-family:"Century Gothic","Gill Sans",Arial,sansserif; }
 
-.dropdown {
-  position: relative;
-  display: inline-block; }
-
-.dropdown-content,.dropdown-content1 {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1; }
-
-.dropdown-content a   {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;}
-  
-.dropdown-content1 {
-top:0;
-right:0;
-transform:translate(100%,0);}
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.sub-menu:hover .dropdown-content {display: block;}
-
-
-
-.dropdown-content1 a:hover {background-color: #ddd;}
-
-.dropdown1:hover .dropdown-content1 {display: block;}
-
-.sub-menu:hover .dropdown-content1 {display: block;}
-
- #color{color:white;}
- 
-
-.dropdown-content1{
-top:0;
-right:0;
-transform:translate(100%,0);
-}
-
-.icons{
-border:1px solid black;
-position:fixed;
-top: 34%;
-width:70px;
-right:0%; 
-display:flex;
-flex-direction:column;
-}
-
-
-.fa {
-  padding: 20px;
-  font-size: 20px;
-  width: 28px;
-  text-align: center;
-  text-decoration: none;
-  margin: 4px 1px;
-}
-
-.fa:hover {
-    opacity: 0.6;
-}
-
-.fa:hover {
-    opacity: 0.6;
-}
-
-.fa:hover {
-    opacity: 0.6;
-}
-
-.fa-facebook {
-  background: #3B5998;
+ a:hover:not(.active)
+ {
+  background-color: #092756;
   color: white;
 }
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
 </style>
-
-<script>
-  function mOver(obj) {
-  obj.style.backgroundColor = "#1ec5e5";
-  
-}
-  function mOut(obj) {
-	  obj.style.backgroundColor ="#000000";
-	}
-  
-  function mOver1(obj) {
-	  obj.style.backgroundColor = "#1ec5e5";
-	  
-	}
-	  function mOut1(obj) {
-		  obj.style.backgroundColor ="#ffffff";
-		}
-</script>
-
 </head>
 <body>
-
-	
-	&nbsp;&nbsp;<div align="center">
-          <marquee bgcolor="yellow"
-         behavior="alternate"
-         direction="right"
-         loop="100000"
-         scrollamount="1"
-         scrolldelay="30"
-         width="80%"> <h4>Welcome to Our ProLearn Education Website. </h4></marquee>
-</div>
-
-
-<div id="header"> 
-
-<h3>ProLearn.com  </h3>
-
-</div>
-
-
- <div id="f">               
- <a class="active"> Home  </a>&nbsp;&nbsp;&nbsp;&nbsp;
+    
+  <table border="0"  width="100%" >
+		<tbody><tr>
+             <th align="left"><img src="Online-exam-system.jpg"  width="430" height="210" ></th>	
+        <th>	
+	<td> <a class="active" href="welcomedemo.jsp">Home</a>	
+	 <a href="login.html">Log In</a>
+	    <a href="insertdata.jsp">Sign Up</a>
+	 <a href="About.jsp">About</a>  </td>
+     </th>
+ </tr>
+  </tbody></table>   
+ &nbsp;&nbsp;
  
-  <div class="dropdown">
- <a  class="active"  onmouseover="mOver(this)" onmouseout="mOut(this)"> class 8-10</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- <div class="dropdown-content">
- 
+     <p align="center">&nbsp;&nbsp;&nbsp;</p>
+     <p align="center">&nbsp;&nbsp;&nbsp;</p>
+     <p align="center">&nbsp;&nbsp;&nbsp;</p>
      
-    <div class="dropdown1">
-    <a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >Class 8</a>
-    <div class="dropdown-content1">   
-    <a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >8-HINDi</a>
-    <a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >8-NEPALI</a>
-    <a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >8-ENGLISH</a>
-    <a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >8-SCIENCE</a>
-    <a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >8-MATHS</a>
-    </div></div>
-    
-    <div class="dropdown1">
-    <a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >Class 9</a>
-    <div class="dropdown-content1">   
-    <a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >9-HINDi</a>
-    <a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >9-NEPALI</a>
-    <a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >9-ENGLISH</a>
-    <a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >9-SCIENCE</a>
-    <a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >9-MATHS</a>
-    </div></div>
-    
-    <div class="dropdown1">
-    <a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >Class 10</a>
-    <div class="dropdown-content1">   
-    <a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >10-HINDi</a>
-    <a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >10-NEPALI</a>
-    <a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >10-ENGLISH</a>
-    <a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >10-SCIENCE</a>
-    <a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >10-MATHS</a>
-    </div></div>
-    
-  </div>
-  </div>
-  
- <div class="dropdown">
- <a class="active" onmouseover="mOver(this)" onmouseout="mOut(this)"> class 11-12</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- <div class="dropdown-content">
- 
- <div class="dropdown1">
-    <a href="#" onmouseover="mOver1(this)" onmouseout="mOut1(this)">Class 11</a>
-    <div class="dropdown-content1">   
-    <a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >11-ENGLISH</a>
-    <a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >11-physic</a>
-    <a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >11-MATHS</a>
-    <a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >11-CHEMISTRY</a>
-    </div></div>
-    
-    <div class="dropdown1">
-    <a href="#" onmouseover="mOver1(this)" onmouseout="mOut1(this)">Class 12</a>
-    <div class="dropdown-content1">   
-    <a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >12-ENGLISH</a>
-    <a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >12-physic</a>
-    <a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >12-MATHS</a>
-    <a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >12-CHEMISTRY</a>
-    </div></div>
-    
-  </div> </div>
-  
-  <div class="dropdown">
- <a class="active" onmouseover="mOver(this)" onmouseout="mOut(this)"> Programming Language</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- <div class="dropdown-content">
-  <table >
-  <tr>
-  <th><a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >C Language</a></th>
-  <th><a href="#"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >Data Structure</a></th>
-  </tr>
-  <tr>
-  <th><a href="mukti.html"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >Java</a> </th>
-  <th><a href="java.jsp"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >HTML and CSS </a></th>
-  </tr>
-  
-  <tr>
-  <th><a href="java.jsp"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >Java Script </a></th>
-  <th><a href="java.jsp"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >SERVLET and JSP </a></th>
-  </tr>
-  
-  <tr>
-  <th><a href="java.jsp"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >HIBERNATE </a></th>
-  <th> <a href="java.jsp"  onmouseover="mOver1(this)" onmouseout="mOut1(this)" >Android </a></th>
-  </tr>
-  
-  </table>  
-  </div> </div> 
-  
- 
- </div>
- 
- <div class="icons">
- <a href="https://www.facebook.com/guptamukti/"  class="fa fa-facebook"></a> 
- <a href="#" class="fa fa-twitter"></a>
- <a href="https://www.youtube.com/channel/UCjV6stnq7ExRHgxl43Hj41g/about?view_as=subscriber" class="fa fa-youtube"></a>
- <a href="#" class="fa fa-instagram"></a>
- </div>
- 
- <div id="g">
- <div id="about">
-<Button class="submit" > About</Button>
- </div>
- <div id="about">
-<Button class="privacy" > Privacy Policy</Button>
- </div>
- <p id="color">ProLearn is build for learning</p>
- </div>
-<br><br>
- <p>
-&nbsp; <strong><h4>Download Our Android App</h4></strong><br />
- <a href="about.html">
- <img src="IMG-20200719-WA0004.jpg"  height="100" width="130" />
- </a>
- <br /><br />
- 
- 
-</p>
-
-   
-
-
-
-
-   
-<table width="80%" align="center" cellpadding="10">
-  <tr>
-    <td bgcolor="white">
-       <h1 align="center">ProLearn</h1>
-       <hr width="80%" />
-   
-       <p>Pro Learn application is for student who where from technical or non-technical background. if they want to learn programming language like java, advance java and how to develop android app then they can easily find all notes in our Pro Learn app. Notes is written with practically implementation of programs and we have develop some web application , android application also. According to our web application , android application development we write a notes in simple way so, that everyone can understand and implements....</p>
-   
-    
-   
-       </td>
-  </tr>
-</table>
-
-
-
+  <center>
+  <img src="exam.jpg" width="410" height="205">
+  <img src="onlineexamnew.jpg" width="410" height="205">
+  <img src="onlineexam.jpg" width="410" height="205">
+  </center>
 
 </body>
 </html>
